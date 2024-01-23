@@ -7,6 +7,6 @@ async function getBooksFromAPI() {
     const res = await fetch(endpointAPI)
     books = await res.json()
     let discountBooks = applyDiscount(books)
-    showBooksInScreen(books)
+    showBooksInScreen(discountBooks)
 }
 
