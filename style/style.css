@@ -11,12 +11,19 @@
   --text-tag-color: #9c9c9c;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins';
 }
 
+
+
 .wrap {
-  width: 1280px;
+  width: 98vw;
   margin: 0 auto;
 }
 
@@ -24,19 +31,20 @@ body {
   text-align: center;
   width: 100%;
   background-color: var(--bg-color);
-  margin: 15px 15px;
+  margin: 20px 0px;
 }
+
 
 .banner {
   background-image: url('/image/Banner-1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 278px;
+  height: 40vh;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 30px;
   margin: 4rem 0;
@@ -70,11 +78,11 @@ body {
 }
 
 .livro {
-  width: 302px;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 644px;
+  height: 60%;
   margin-bottom: 1rem;
 }
 
