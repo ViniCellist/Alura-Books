@@ -3,9 +3,10 @@ const insertElementBooks = document.getElementById('livros')
 function showBooksInScreen(bookList) {
     insertElementBooks.innerHTML = ''
     bookList.forEach(book => {
+        let available = book.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel' 
         insertElementBooks.innerHTML += `
         <div class="livro">
-            <img class="livro__imagens" src="${book.imagem}" alt="${book.alt}" />
+            <img class="${available}" src="${book.imagem}" alt="${book.alt}" />
             <h2 class="livro__titulo">
                 ${book.titulo}
             </h2>
