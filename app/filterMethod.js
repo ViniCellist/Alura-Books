@@ -14,7 +14,7 @@ function filterBooks() {
 
 function filterCategory(category) {
     return books.filter(book => book.categoria == category);
-}
+};
 
 function filterAvailability() {
     return books.filter(book => book.quantidade > 0);
