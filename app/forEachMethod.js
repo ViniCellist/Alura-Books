@@ -5,7 +5,7 @@ function showBooksInScreen(bookList) {
     elementTotalAvailableBooks.innerHTML = '';
     insertElementBooks.innerHTML = '';
     bookList.forEach(book => {
-        let available = book.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel' 
+        let available = book.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel' ;
         insertElementBooks.innerHTML += `
         <div class="livro">
             <img class="${available}" src="${book.imagem}" alt="${book.alt}" />
